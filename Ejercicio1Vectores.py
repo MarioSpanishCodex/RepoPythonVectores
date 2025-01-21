@@ -4,14 +4,14 @@ y, posteriormente visualice el valor del elemento mayor y cuántas veces se repi
 este valor máximo. Utiliza JOptionPane.
 """
 
-numero =[int(input(f"{i+1}. Introduce un número: \n")) for i in range (10)]
-numero.sort()
-cont = 1
-pos = len(numero)-1
-num = numero[pos]
+lista = []
 
-for i in range(len(numero)):
-    if numero [i] == num and i < pos:
-        cont += 1
-    elif i == pos:
-        print(f"Cantidad de {numero[i-1]}: {cont}")
+for i in range(10):
+    lista.append(int(input(f"Introduce el número {i}: "))
+
+for elemento in lista:
+    if elemento > mayor:
+        mayor = elemento
+
+print(f"Mayor: {mayor}")
+print(f"En la lista aparece el {mayor} la cantidad de {lista.count(mayor)} veces")

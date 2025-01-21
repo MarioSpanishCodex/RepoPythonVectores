@@ -13,8 +13,11 @@ def contarpares(vector):
             contador += 1
             pos.append(k)
     return pos, contador
-vector = []
-for i in range (0, 10):
-    vector.append(r.randint(0,100))
-pos, contador = contarpares(vector)
-print(f"Hay {contador} pares que están en posiciones {pos}")
+
+lista = []
+for i in range (10):
+    lista.append(r.randint(0,100))
+
+for i in range(len(lista):
+    if esPar(lista[i]):
+        print(f"{lista[i]} es par y está en la posicion {i}")
